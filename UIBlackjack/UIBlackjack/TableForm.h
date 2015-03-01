@@ -1,7 +1,7 @@
 #pragma once
 
-namespace UIBlackjack {
-
+namespace UIBlackjack 
+{
 	using namespace System;
 	using namespace System::ComponentModel;
 	using namespace System::Collections;
@@ -34,6 +34,8 @@ namespace UIBlackjack {
 				delete components;
 			}
 		}
+	private: System::Windows::Forms::Label^  label1;
+	protected:
 
 	private:
 		/// <summary>
@@ -48,12 +50,35 @@ namespace UIBlackjack {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->components = gcnew System::ComponentModel::Container();
-			this->Size = System::Drawing::Size(300,300);
-			this->Text = L"TableForm";
-			this->Padding = System::Windows::Forms::Padding(0);
+			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->SuspendLayout();
+			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->Location = System::Drawing::Point(233, 70);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(46, 17);
+			this->label1->TabIndex = 0;
+			this->label1->Text = L"label1";
+			this->label1->Click += gcnew System::EventHandler(this, &TableForm::label1_Click);
+			// 
+			// TableForm
+			// 
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->ClientSize = System::Drawing::Size(962, 358);
+			this->Controls->Add(this->label1);
+			this->Name = L"TableForm";
+			this->Text = L"TableForm";
+			this->ResumeLayout(false);
+			this->PerformLayout();
+
 		}
 #pragma endregion
+	private: System::Void label1_Click(System::Object^  sender, System::EventArgs^  e) 
+	{
+	
+	}
 	};
 }
