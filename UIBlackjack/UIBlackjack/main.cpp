@@ -12,6 +12,10 @@ using namespace std;
 /*  Entry point must be set to main to run forms. rc Project>Properties>Linker>Advanced  */
 void main()
 {
+	string player1Name;
+	cout << "enter the name\n";
+	cin >> player1Name;
+
 	/*  Not sure what these two do  */
 	//Application::EnableVisualStyles(); 
 	//Application::SetCompatibleTextRenderingDefault(false);
