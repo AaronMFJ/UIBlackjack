@@ -1,11 +1,14 @@
-﻿Build started 3/2/2015 8:13:25 PM.
+﻿Build started 3/3/2015 10:08:31 AM.
      1>Project "C:\Users\aaron.jones\Documents\GitHub\UIBlackjack\UIBlackjack\UIBlackjack\UIBlackjack.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib main.cpp
          main.cpp
-     1>c:\users\aaron.jones\documents\github\uiblackjack\uiblackjack\uiblackjack\TableForm.h(141): error C2065: 'cout' : undeclared identifier
-     1>Done Building Project "C:\Users\aaron.jones\Documents\GitHub\UIBlackjack\UIBlackjack\UIBlackjack\UIBlackjack.vcxproj" (Build target(s)) -- FAILED.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\aaron.jones\Documents\GitHub\UIBlackjack\UIBlackjack\Debug\UIBlackjack.exe" /INCREMENTAL /NOLOGO /ASSEMBLYRESOURCE:Debug\UIBlackjack.TableForm.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\aaron.jones\Documents\GitHub\UIBlackjack\UIBlackjack\Debug\UIBlackjack.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\main.obj
+         "Debug\.NETFramework,Version=v4.5.AssemblyAttributes.obj"
+         UIBlackjack.vcxproj -> C:\Users\aaron.jones\Documents\GitHub\UIBlackjack\UIBlackjack\Debug\UIBlackjack.exe
+     1>Done Building Project "C:\Users\aaron.jones\Documents\GitHub\UIBlackjack\UIBlackjack\UIBlackjack\UIBlackjack.vcxproj" (Build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:00.55
+Time Elapsed 00:00:01.71

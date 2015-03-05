@@ -38,6 +38,8 @@ namespace UIBlackjack
 	private: System::Windows::Forms::Label^  player1Label;
 	private: System::Windows::Forms::PictureBox^  cardBack;
 	private: System::Windows::Forms::TextBox^  player1TextBox;
+	private: System::Windows::Forms::Button^  player1NameButton;
+
 
 	protected:
 
@@ -61,6 +63,7 @@ namespace UIBlackjack
 			this->player1Label = (gcnew System::Windows::Forms::Label());
 			this->cardBack = (gcnew System::Windows::Forms::PictureBox());
 			this->player1TextBox = (gcnew System::Windows::Forms::TextBox());
+			this->player1NameButton = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->cardBack))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -71,7 +74,7 @@ namespace UIBlackjack
 			this->dealerLabel->BackColor = System::Drawing::Color::ForestGreen;
 			this->dealerLabel->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->dealerLabel->Location = System::Drawing::Point(265, 71);
+			this->dealerLabel->Location = System::Drawing::Point(346, 89);
 			this->dealerLabel->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->dealerLabel->Name = L"dealerLabel";
 			this->dealerLabel->Size = System::Drawing::Size(76, 26);
@@ -86,7 +89,7 @@ namespace UIBlackjack
 			this->player1Label->BackColor = System::Drawing::Color::ForestGreen;
 			this->player1Label->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->player1Label->Location = System::Drawing::Point(265, 299);
+			this->player1Label->Location = System::Drawing::Point(346, 393);
 			this->player1Label->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->player1Label->Name = L"player1Label";
 			this->player1Label->Size = System::Drawing::Size(92, 26);
@@ -106,12 +109,21 @@ namespace UIBlackjack
 			// 
 			// player1TextBox
 			// 
-			this->player1TextBox->Location = System::Drawing::Point(262, 276);
+			this->player1TextBox->Location = System::Drawing::Point(338, 370);
 			this->player1TextBox->Name = L"player1TextBox";
 			this->player1TextBox->Size = System::Drawing::Size(100, 20);
 			this->player1TextBox->TabIndex = 3;
 			this->player1TextBox->Text = L"Enter your name";
 			this->player1TextBox->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
+			// 
+			// player1NameButton
+			// 
+			this->player1NameButton->Location = System::Drawing::Point(444, 370);
+			this->player1NameButton->Name = L"player1NameButton";
+			this->player1NameButton->Size = System::Drawing::Size(68, 20);
+			this->player1NameButton->TabIndex = 4;
+			this->player1NameButton->Text = L"Set Name";
+			this->player1NameButton->UseVisualStyleBackColor = true;
 			// 
 			// TableForm
 			// 
@@ -119,7 +131,8 @@ namespace UIBlackjack
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Dpi;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->ClientSize = System::Drawing::Size(626, 442);
+			this->ClientSize = System::Drawing::Size(784, 561);
+			this->Controls->Add(this->player1NameButton);
 			this->Controls->Add(this->player1TextBox);
 			this->Controls->Add(this->cardBack);
 			this->Controls->Add(this->player1Label);
@@ -135,8 +148,9 @@ namespace UIBlackjack
 
 		}
 #pragma endregion
-	private: System::Void label1_Click(System::Object^  sender, System::EventArgs^  e) 
+	private: System::Void label1_Click(System::Object^  sender, System::EventArgs^  e)
 	{
 	}
-	};
+
+};
 }
